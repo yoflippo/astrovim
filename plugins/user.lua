@@ -20,5 +20,9 @@ return {
    require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
   end
  },
+ {
+  'Exafunction/codeium.vim',
+  event = 'BufEnter'
+ }
 
 }
