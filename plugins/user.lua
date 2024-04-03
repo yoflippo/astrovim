@@ -23,6 +23,8 @@ return {
  {
   'Exafunction/codeium.vim',
   event = 'BufEnter'
- }
+ },
+ {"lewis6991/satellite.nvim" }
+
 
 }
