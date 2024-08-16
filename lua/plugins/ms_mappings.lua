@@ -32,7 +32,9 @@ return {
           --- MS
           -- Custom key mapping for Codeium suggestions
           -- Replace '<leader>cs' with your preferred key combination
-          ["<Tab>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
+          -- TAB
+          ["<TAB>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
+
         },
       },
     },
