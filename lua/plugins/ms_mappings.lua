@@ -21,6 +21,7 @@ return {
           -- tables with the `name` key will be registered with which-key if it's installed
           -- this is useful for naming menus
           ["<Leader>b"] = { name = "Buffers" },
+          ["<C-h>"] = { "<cmd>Ouroboros<cr>", desc = "Open source header" },
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         },
