@@ -29,6 +29,14 @@ return {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
         },
+        i = {
+          --- MS
+          -- Custom key mapping for Codeium suggestions
+          -- Replace '<leader>cs' with your preferred key combination
+          -- TAB
+          ["<TAB>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
+
+        },
       },
     },
   },
@@ -58,3 +66,4 @@ return {
     },
   },
 }
+
