@@ -1,0 +1,31 @@
+-- Telescope Source/Header Switcher
+
+local M = {}
+
+-- Function to switch between .cpp and .hpp or .c and .h using Telescope
+function M.switch_between_source_header()
+  local current_file = vim.fn.expand('%:t')
+  local current_extension = vim.fn.expand('%:e')
+  local search_pattern = ''
+
+  if current_extension == 'cpp' or current_extension == 'hpp' then
+    search_pattern = '.*%.\\(cpp\\|hpp\\)$'
+  elseif current_extension == 'c' or current_extension == 'h' then
+    search_pattern = '.*%.\\(c\\|h\\)$'
+  else
+    print("No matching file type.")
+    return
+  end
+
+  require('telescope.builtin').find_files({
+    prompt_title = "Switch Source/Header File",
+    search_dirs = { vim.fn.expand('%:p:h') },  -- Search in the current directory
+    find_command = { 'rg', '--files', '--iglob', search_pattern },
+  })
+end
+
+-- Map Ctrl+Tab to the custom switch function
+vim.api.nvim_set_keymap('n', '<C-Tab>', ':lua require("telescope_switcher").switch_between_source_header()<CR>', { noremap = true, silent = true })
+
+return M
+
