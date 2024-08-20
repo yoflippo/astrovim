@@ -21,7 +21,7 @@ return {
           -- tables with the `name` key will be registered with which-key if it's installed
           -- this is useful for naming menus
           ["<Leader>b"] = { name = "Buffers" },
-          ["<C-h>"] = { "<cmd>Ouroboros<cr>", desc = "Open source header" },
+          ["<A-h>"] = { "<cmd>Ouroboros<cr>", desc = "Open source header" },
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         },
@@ -34,8 +34,10 @@ return {
           -- Custom key mapping for Codeium suggestions
           -- Replace '<leader>cs' with your preferred key combination
           -- TAB
-          ["<TAB>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
-
+          ["<A-a>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
+          ["<A-e>"] = { "codeium#CycleCompletions(1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
+          ["<A-d>"] = { "codeium#CycleCompletions(-1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
+          ["<A-s>"] = { "codeium#Clear()", expr = true, silent = true, noremap = true, desc = "Clear Codeium suggestion" },
         },
       },
     },
