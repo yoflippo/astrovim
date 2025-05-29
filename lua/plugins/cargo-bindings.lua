@@ -9,6 +9,7 @@ return {
           ["<leader>rt"] = { ":!cargo test<CR>", desc = "Cargo Test" },
           ["<leader>ru"] = { ":!cargo update<CR>", desc = "Cargo Update" },
           ["<leader>rB"] = { ":!cargo build --release<CR>", desc = "Cargo Build Release" },
+          ["<leader>rf"] = { ":RustFmt<CR>", desc = "Cargo Format" },
         },
       },
     },
