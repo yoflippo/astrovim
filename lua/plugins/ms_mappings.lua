@@ -34,10 +34,10 @@ return {
           -- Custom key mapping for Codeium suggestions
           -- Replace '<leader>cs' with your preferred key combination
           -- TAB
-          ["<A-a>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
-          ["<A-e>"] = { "codeium#CycleCompletions(1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
-          ["<A-d>"] = { "codeium#CycleCompletions(-1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
-          ["<A-s>"] = { "codeium#Clear()", expr = true, silent = true, noremap = true, desc = "Clear Codeium suggestion" },
+          -- ["<A-a>"] = { "codeium#Accept()", expr = true, silent = true, noremap = true, desc = "Accept Codeium suggestion" },
+          -- ["<A-e>"] = { "codeium#CycleCompletions(1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
+          -- ["<A-d>"] = { "codeium#CycleCompletions(-1)", expr = true, silent = true, noremap = true, desc = "Cycle Codeium suggestions" },
+          -- ["<A-s>"] = { "codeium#Clear()", expr = true, silent = true, noremap = true, desc = "Clear Codeium suggestion" },
         },
       },
     },
