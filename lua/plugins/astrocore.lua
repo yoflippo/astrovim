@@ -85,5 +85,13 @@ return {
         -- ["<C-S>"] = false,
       },
     },
+    mappings = {
+      i = {
+        -- Dit is jouw persoonlijke override. 
+        -- Zelfs als AstroNvim de core update, blijft deze regel staan.
+        ["ij"] = false,
+      },
+    },
   },
 }
+
