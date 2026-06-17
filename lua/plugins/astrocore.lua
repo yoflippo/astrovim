@@ -91,6 +91,7 @@ return {
         -- Zelfs als AstroNvim de core update, blijft deze regel staan.
         ["ij"] = false,
         ["jk"] = false,
+        ["ijk"] = false,
       },
     },
   },
